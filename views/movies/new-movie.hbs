@@ -1,0 +1,32 @@
+<div>
+
+    <h2></h2>
+
+    <form action="" method="POST">
+        <div>
+            <label for="title">Title</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="genre">Genre</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="plot">Plot</label>
+            <input type="text">
+        </div>
+        <div>
+<label for="cast">Choose a car:</label>
+
+<select name="cast" id="cast" multiple>
+    {{#each movies}}
+  <option value="movies">{{cast}} </option>
+      {{/each}}
+</select>
+        </div>
+        <div>
+            <button type="submit">Create Movie</button>
+        </div>
+    </form>
+
+</div>
